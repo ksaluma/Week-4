@@ -1,5 +1,3 @@
-
-
 $(document).ready(function(){
 
 	var switchStatus = true;
@@ -12,10 +10,17 @@ $(document).ready(function(){
 
 		$('button').toggleClass('on').toggleClass('off');
 
-		if ( switchStatus = false) {
-			$('status').text("Hey, who turn off the lights?");
-		}
+	if ( switchStatus == false) {
+		$('.status').text("Hey, who turn off the lights?");
+	}
+
+	else {
+		$('.status').text("It's so bright in here!");
+	}
+
 	});
+
+
 
 });
 
